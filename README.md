@@ -1,18 +1,31 @@
-# Sbilmis Tap
+# Homebrew tap for Zotero Project Manager
 
-## How do I install these formulae?
+Install `zpm` directly:
 
-`brew install sbilmis/tap/<formula>`
+```shell
+brew install sbilmis/tap/zpm
+```
 
-Or `brew tap sbilmis/tap` and then `brew install <formula>`.
+Or add the tap first:
 
-Or, in a `brew bundle` `Brewfile`:
+```shell
+brew tap sbilmis/tap
+brew install zpm
+```
+
+Then verify the installation:
+
+```shell
+zpm --version
+```
+
+In a `Brewfile`:
 
 ```ruby
 tap "sbilmis/tap"
-brew "<formula>"
+brew "zpm"
 ```
 
-## Documentation
+Project source and documentation: [sbilmis/zotero-project-manager](https://github.com/sbilmis/zotero-project-manager).
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+The formula installs released packages from [PyPI](https://pypi.org/project/zotero-project-manager/).
