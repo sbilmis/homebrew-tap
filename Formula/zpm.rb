@@ -3,8 +3,8 @@ class Zpm < Formula
 
   desc "Export Zotero collections into clean, incremental research workspaces"
   homepage "https://github.com/sbilmis/zotero-project-manager"
-  url "https://files.pythonhosted.org/packages/ba/d8/6df79822c3441fd67f4905fe526959b2304261e2083b5d52bc5ff4d6999e/zotero_project_manager-0.5.0.tar.gz"
-  sha256 "67c12c8e2891ce042fb2da7a6bd7808ab1b10b2f7226e7b32ce71faeacec89ef"
+  url "https://files.pythonhosted.org/packages/e8/20/7c818d253cc868e1175e4e0452e3cb01fecc365885fd2714fe76712857ae/zotero_project_manager-0.6.0.tar.gz"
+  sha256 "ebfa1f4d0b8204c7ee874b14c18e739f228ed99f54e16462a8ab2ef2f9ca953d"
   license "MIT"
 
   depends_on "python@3.14"
@@ -49,6 +49,6 @@ class Zpm < Formula
   end
 
   test do
-    assert_match "zpm 0.5.0", shell_output("#{bin}/zpm --version")
+    assert_match "zpm 0.6.0", shell_output("#{bin}/zpm --version")
   end
 end
