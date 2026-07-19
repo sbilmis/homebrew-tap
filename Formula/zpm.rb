@@ -3,8 +3,8 @@ class Zpm < Formula
 
   desc "Export Zotero collections into clean, incremental research workspaces"
   homepage "https://github.com/sbilmis/zotero-project-manager"
-  url "https://files.pythonhosted.org/packages/e8/20/7c818d253cc868e1175e4e0452e3cb01fecc365885fd2714fe76712857ae/zotero_project_manager-0.6.0.tar.gz"
-  sha256 "ebfa1f4d0b8204c7ee874b14c18e739f228ed99f54e16462a8ab2ef2f9ca953d"
+  url "https://files.pythonhosted.org/packages/95/44/3dc9e49cd2cba18fc0f5fe86ed4031b4b3aea5fb257085f900d7483ff15e/zotero_project_manager-1.0.0.tar.gz"
+  sha256 "b3251b8b10bbb8b53119c8a4e03fc059ce2b3e35186004e7a13893e38c9cd60a"
   license "MIT"
 
   depends_on "python@3.14"
@@ -40,8 +40,8 @@ class Zpm < Formula
   end
 
   resource "typer" do
-    url "https://files.pythonhosted.org/packages/7c/f7/68adc395201b20b872d68e975386832e8005ffeacedd43a1d837a32815be/typer-0.26.8.tar.gz"
-    sha256 "c244a6bd558886fe3f8780efb6bdd28bb9aff005a94eedebaa5cb32926fe2f7e"
+    url "https://files.pythonhosted.org/packages/37/78/fda3361b56efc27944f24225f6ecd13d96d6fcfe37bd0eb34e2f4c63f9fc/typer-0.27.0.tar.gz"
+    sha256 "629bd12ea5d13a17148125d9a264f949eb171fb3f120f9b04d85873cab054fa5"
   end
 
   def install
@@ -49,6 +49,6 @@ class Zpm < Formula
   end
 
   test do
-    assert_match "zpm 0.6.0", shell_output("#{bin}/zpm --version")
+    assert_match "zpm 1.0.0", shell_output("#{bin}/zpm --version")
   end
 end
