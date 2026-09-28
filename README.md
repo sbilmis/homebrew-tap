@@ -1,4 +1,4 @@
-# Homebrew tap for Zotero Project Manager
+# Homebrew tap for Zotero Project Manager (ZPM)
 
 Install `zpm` directly:
 
