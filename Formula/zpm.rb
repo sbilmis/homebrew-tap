@@ -7,6 +7,12 @@ class Zpm < Formula
   sha256 "18f9a381f93a97dc9b950b89bbcfc85ca7d15158f96ff061f6f22c1c46e83500"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/sbilmis/homebrew-tap/releases/download/zpm-1.3.2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "2480871a62f52b53f1e9aee7f21315a709b432352255934f3544d46dc97d3020"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ba266cf740c7162609a2837c795b77e8453b9f40c693774d975cb9e74cd301ba"
+  end
+
   depends_on "python@3.14"
 
   resource "annotated-doc" do
